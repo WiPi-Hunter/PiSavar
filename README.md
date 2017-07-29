@@ -1,6 +1,6 @@
 # PineAPhunter - Detect, Analysis, Kill
 
-<center><img src="https://github.com/besimaltnok/pineAPhunter/blob/master/pineapple.png" width="350" height="500"/></center>
+<center><img src="https://github.com/besimaltnok/pineAPhunter/blob/master/pineapple.png" width="300" height="400"/></center>
 
 
 ### How to work PineAP Suite
