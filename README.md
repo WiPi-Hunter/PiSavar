@@ -14,7 +14,7 @@
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `One MAC address, more than one SSID information .... ..- -. - . .-. `
 
 
-### Features PineAPHunter
+### Features of PineAPHunter
 
 * Detects PineAP Suite 
 * Detects networks opened by PineAP Suite.
