@@ -1,4 +1,4 @@
-# PineAPhunter - Detect, Analysis, Kill
+# PineAPhunter - Analysis, Detect, Kill
 
 <center><img src="https://github.com/besimaltnok/pineAPhunter/blob/master/pineapple.png" width="300" height="400"/></center>
 
