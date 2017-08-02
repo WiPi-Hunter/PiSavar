@@ -32,9 +32,10 @@ Run the program with following command:
 
 ### Screenshots
 
+<img src="pineapple.png" width="20%"></img>
+<img src="pineapple.png" width="20%"></img> 
 
 ### Demo Video
-
 
 ### Authors
 This project is written by Besim ALTINOK
