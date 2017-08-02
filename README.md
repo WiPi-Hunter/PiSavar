@@ -20,3 +20,21 @@
 * Detects networks opened by PineAP Suite.
 * List of clients connected to fake access points
 * Starts deauthentication attack for PineAP Suite.
+
+
+### --------------------------------------------------------------------------------
+
+### Usage
+Run the program with following command: 
+
+`python pineAPhunter.py`
+
+
+### Screenshots
+
+
+### Demo Video
+
+
+### Authors
+This project is written by Besim ALTINOK
