@@ -27,7 +27,7 @@
 ### Usage
 Run the program with following command: 
 
-`python pineAPhunter.py`
+`python pidgey.py`
 
 
 ### Screenshots
