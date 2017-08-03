@@ -1,4 +1,4 @@
-# Pidgey  - [ - PineAP Suite - Analysis, Detect, Kill - ]
+# PiSavar  - [ - PineAP Suite - Analysis, Detect, Kill - ]
 
 <center><img src="https://github.com/besimaltnok/pineAPhunter/blob/master/pineapple.png" width="300" height="400"/></center>
 
@@ -27,7 +27,7 @@
 ### Usage
 Run the program with following command: 
 
-`python pidgey.py`
+`python pisavar.py`
 
 
 ### Screenshots
