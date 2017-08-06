@@ -32,7 +32,7 @@ Run the program with following command:
 
 ### Screenshots
 
-<img src="images/pisavar2.png" width="30%"></img>
+<img src="images/pisavar2.png" width="50%"></img>
 
 ### Demo Video
 
