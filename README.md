@@ -33,7 +33,6 @@ Run the program with following command:
 ### Screenshots
 
 <img src="images/pisavar2.png" width="30%"></img>
-<img src="images/dos.png" width="30%"></img>
 
 ### Demo Video
 
