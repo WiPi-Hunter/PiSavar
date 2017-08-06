@@ -32,8 +32,8 @@ Run the program with following command:
 
 ### Screenshots
 
-<img src="pineapple.png" width="20%"></img>
-<img src="pineapple.png" width="20%"></img> 
+<img src="images/pisavar1.png" width="25%"></img>
+<img src="images/pisavar2.png" width="25%"></img>
 
 ### Demo Video
 
