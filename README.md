@@ -9,6 +9,8 @@
 * Creates SSID pool with collected SSID information
 * Creates fake access points using information in the SSID pool
 
+<img src="images/pineap.png" width="50%"></img>
+
 ### Where is the problem?
 
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `One MAC address, more than one SSID information .... ..- -. - . .-. `
