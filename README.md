@@ -35,9 +35,9 @@ python pisavar.py wlan0mon
 
 
 ### Screenshots
-<img src="images/pid.png" width="25%"></img>
-<img src="images/pifake.jpg" width="25%"></img>
-<img src="images/dos5.png" width="25%"></img>
+<img src="images/pid.png" width="28%"></img>
+<img src="images/pifake.jpg" width="32%"></img>
+<img src="images/dos5.png" width="37%"></img>
 
 
 ### Demo Video
