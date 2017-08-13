@@ -29,6 +29,9 @@
 * List of clients connected to fake access points
 * Starts deauthentication attack for PineAP Suite.
 
+#### Diagram
+
+<img src="images/info.png" width="50%"></img>
 
 ### --------------------------------------------------------------------------------
 
