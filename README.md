@@ -1,6 +1,12 @@
 # PiSavar  - [ - PineAP Suite - Analysis, Detect, Kill - ]
 
-<center><img src="https://github.com/besimaltnok/pineAPhunter/blob/master/pineapple.png" width="300" height="400"/></center>
+<p align="center">
+<img src="https://github.com/besimaltnok/pineAPhunter/blob/master/pineapple.png" width="300" height="400">
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Python-3-yellow.svg"></a> <img src="https://img.shields.io/badge/license-GPLv3-red.svg">
+</p>
 
 
 ### How to work PineAP Suite
