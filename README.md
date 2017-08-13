@@ -27,7 +27,11 @@
 ### Usage
 Run the program with following command: 
 
-`python pisavar.py`
+```python
+airmon-ng start wlan0
+python pisavar.py wlan0mon
+
+```
 
 
 ### Screenshots
