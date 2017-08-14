@@ -36,6 +36,23 @@
 ### --------------------------------------------------------------------------------
 
 ### Usage
+
+#### Kali Linux:
+
+Download pisavar:
+
+``
+
+Go inside the folder
+
+`cd leviathan`
+
+Install Python librarie(s):
+
+`pip install termcolor`
+
+It's done!
+
 Run the program with following command: 
 
 ```python
