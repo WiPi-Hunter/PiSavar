@@ -41,7 +41,7 @@
 
 Download pisavar:
 
-`wget `
+`git clone https://github.com/besimaltnok/PiSavar.git`
 
 Install Python librarie(s):
 
@@ -52,9 +52,10 @@ It's done!
 Run the program with following command: 
 
 ```python
+(root)
 airmon-ng start wlan0
+cd PiSavar
 python pisavar.py wlan0mon
-
 ```
 
 
