@@ -41,11 +41,7 @@
 
 Download pisavar:
 
-``
-
-Go inside the folder
-
-`cd leviathan`
+`wget `
 
 Install Python librarie(s):
 
