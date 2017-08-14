@@ -47,7 +47,7 @@ python pisavar.py wlan0mon
 
 ### Screenshots
 <img src="images/pisavarnew.png" width="28%"></img>
-<img src="images/dosnew.png" width="37%"></img>
+<img src="images/dosnew.png" width="39%"></img>
 
 
 ### Demo Video
