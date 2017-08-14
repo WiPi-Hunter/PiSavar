@@ -13,7 +13,7 @@
 The goal of this project is to find out the fake access points opened by the WiFi pineapple device using the PineAP module and to prevent clients from being affected by initiating a deauthentication attack on the attacking device.
 
 
-### How PineAP Module Work
+### How PineAP Module Works
 
 * Collect SSID information
 * Creates SSID pool with collected SSID information
