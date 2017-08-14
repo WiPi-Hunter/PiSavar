@@ -26,8 +26,12 @@
 
 * Detects PineAP Suite 
 * Detects networks opened by PineAP Suite.
-* List of clients connected to fake access points
 * Starts deauthentication attack for PineAP Suite.
+
+### Features to add
+
+* List of clients connected to fake access points
+* Record activities - Logging
 
 #### Diagram
 
