@@ -15,7 +15,7 @@ The goal of this project is to find out the fake access points opened by the WiF
 
 ### How PineAP Module Works
 
-* Collect SSID information
+* Collects SSID information
 * Creates SSID pool with collected SSID information
 * Creates fake access points using information in the SSID pool
 
@@ -93,4 +93,4 @@ python pisavar.py wlan0mon
 https://youtu.be/P7mfh37NZc0
 
 ### Authors
-This project is written by Besim ALTINOK
+This project is coded by Besim ALTINOK
