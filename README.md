@@ -10,7 +10,7 @@
 
 ### About Project
 
-The goal of this project is to find out the fake access points opened by the WiFi pineapple device using the PineAP module and to prevent clients from being affected by initiating a deauthentication attack on the attacking device.
+The goal of this project is to find out the fake access points opened by the WiFi pineapple device using the PineAP module and to prevent clients from being affected by initiating a deauthentication attack to the attacking device.
 
 
 ### How PineAP Module Works
