@@ -1,4 +1,4 @@
-   # PiSavar  - [ - PineAP - Analysis, Detect, Kill - ]
+### PiSavar  - Detects PineAP module and starts deauthentication attack (for fake access points)
 
 <p align="center">
 <img src="https://github.com/besimaltnok/pineAPhunter/blob/master/pineapple.png" width="200" height="300">
