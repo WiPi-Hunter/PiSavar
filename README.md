@@ -28,7 +28,7 @@ The goal of this project is to find out the fake access points opened by the WiF
 
 ### Features of PiSavar
 
-* Detects PineAP activities 
+* Detects PineAP activities. 
 * Detects networks opened by PineAP.
 * Starts deauthentication attack for PineAP.
 
