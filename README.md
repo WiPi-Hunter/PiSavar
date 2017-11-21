@@ -1,4 +1,4 @@
-### PiSavar  - Detects PineAP module and starts deauthentication attack (for fake access points)
+### PiSavar  - Detects PineAP module and starts deauthentication attack (for fake access points - WiFi Pineapple Activities Detection)
 
 <p align="center">
 <img src="https://github.com/besimaltnok/pineAPhunter/blob/master/pineapple.png" width="200" height="300">
