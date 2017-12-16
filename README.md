@@ -85,9 +85,7 @@ python pisavar.py -h
 ```
 
 ### Screenshots
-<img src="images/pisavarnew.png" width="28%"></img>
-<img src="images/dosnew.png" width="39%"></img>
-
+<img src="images/help.png" width="50%"></img>
 
 ### Demo Video
 
