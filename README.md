@@ -85,8 +85,8 @@ python pisavar.py -h
 ```
 
 ### Screenshots
-<img src="images/help.png" width="50%"></img>
-<img src="images/attack.png" width="50%"></img>
+<img src="images/attack.png" width="30%"></img>
+<img src="images/help.png" width="38%"></img>
 
 ### Demo Video
 
