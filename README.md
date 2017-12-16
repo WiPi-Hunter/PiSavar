@@ -86,10 +86,12 @@ python pisavar.py -h
 
 ### Screenshots
 <img src="images/help.png" width="50%"></img>
+<img src="images/attack.png" width="50%"></img>
 
 ### Demo Video
 
-https://youtu.be/P7mfh37NZc0
+new: https://www.youtube.com/watch?v=zJZkPz9ZPMk
+old: https://youtu.be/P7mfh37NZc0
 
 ### Authors
 This project is coded by Besim ALTINOK
