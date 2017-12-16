@@ -55,7 +55,7 @@ The goal of this project is to find out the fake access points opened by the WiF
 
 Download pisavar:
 
-`git clone https://github.com/besimaltnok/PiSavar.git`
+`git clone https://github.com/WiPi-Hunter/PiSavar.git`
 
 Install Python librarie(s):
 
@@ -81,7 +81,7 @@ Run:
 
 ```python
 cd PiSavar
-python pisavar.py wlan0mon
+python pisavar.py -h
 ```
 
 ### Screenshots
