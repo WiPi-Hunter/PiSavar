@@ -85,10 +85,10 @@ python pisavar.py -h
 ```
 
 ### Screenshots
-<img src="images/attack.png" width="42%"></img>
-<img src="images/pisavar_detect.png" width="38%"></img>
-<img src="images/pisavar_log.png" width="38%"></img>
-<img src="images/help.png" width="42%"></img>
+<img src="images/attack.png"></img>
+<img src="images/pisavar_detect.png"></img>
+<img src="images/pisavar_log.png"></img>
+<img src="images/help.png"></img>
 
 ### Demo Video
 
