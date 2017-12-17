@@ -148,13 +148,13 @@ if __name__ == '__main__':
     print "[*] Detects PineAP module activity and starts deauthentication attack \n    (for fake access points - WiFi Pineapple Activities Detection) "
     print "------------"*7
     while True:
-	    time.sleep(10)
-	        channel = 0
-	        blacklist = []
-	        info_list = []
-	        pp = {}
-	        sniff_channel_hop(iface)
-	        blacklist = pp_analysis(info_list, pp, pisavar_method)
-	        time.sleep(2)
-	        if len(blacklist)!=0:
-		    	print "--------"*5
+	time.sleep(10)
+	channel = 0
+	blacklist = []
+	info_list = []
+	pp = {}
+	sniff_channel_hop(iface)
+	blacklist = pp_analysis(info_list, pp, pisavar_method)
+	time.sleep(2)
+	if len(blacklist)!=0:
+	    print "--------"*5
