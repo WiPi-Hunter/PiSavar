@@ -49,7 +49,7 @@ The goal of this project is to find out the fake access points opened by the WiF
 #### Requirements
 
 * **Hardware:** TP LINK TL-WN722N
-* **Modules:** scapy, time, termcolor, sys
+* **Modules:** scapy, time, termcolor, argparse, commands, netifaces, logging
 
 #### Kali Linux:
 
