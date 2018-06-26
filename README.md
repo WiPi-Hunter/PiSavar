@@ -21,7 +21,8 @@ The goal of this project is to find out the fake access points opened by the WiF
 * Creates SSID pool with collected SSID information
 * Creates fake access points using information in the SSID pool
 
-<img src="images/pineap.png" width="50%"></img>
+<img src="images/pineap.png" width="45%"></img>
+<img src="images/pineap_2.png" width="45%"></img>
 
 ### Where is the problem?
 
